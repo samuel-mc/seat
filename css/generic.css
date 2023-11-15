@@ -1,0 +1,82 @@
+:root {
+    --orange-color: #F94616;
+
+    --text--sm: 12px;
+    --text--md: 16px;
+    --text--lg: 20px;
+    --text--xl: 24px;
+    --text--2xl: 32px;
+}
+
+.text--sm {
+    font-size: var(--text--sm);
+}
+
+.text--md {
+    font-size: var(--text--md);
+}
+
+.text--lg {
+    font-size: var(--text--lg);
+}
+
+.text--xl {
+    font-size: var(--text--xl);
+}
+
+.text--2xl {
+    font-size: var(--text--2xl);
+}
+
+.bg--orange {
+    background-color: var(--orange-color);
+}
+
+.text--orange {
+    color: var(--orange-color);
+}
+
+.btn--rounded {
+    border-radius: 50px;
+}
+
+.btn--orange {
+    background-color: var(--orange-color);
+    color: #fff;
+}
+
+.maxw--520 {
+    max-width: 520px;
+}
+
+.gap--24 {
+    gap: 24px;
+}
+
+.grid--2cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 990px) {
+    .grid--2cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid--4cols {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid--4cols {
+        grid-template-columns: 1fr;
+    }
+}
