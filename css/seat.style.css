@@ -1,0 +1,25 @@
+.showMenu {
+    display: block !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.categories--card {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: 12px;
+    text-align: center;
+}
+
+.bestSellers--item {
+    padding: 12px 24px;
+    height: 100%;
+}
+
+.bestSellers--item>img {
+    height: auto !important;
+    width: 100%;
+}
+
+.say--img {
+    width: 240px;
+}

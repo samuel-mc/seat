@@ -108,3 +108,57 @@ toggleMenu = () => {
     const toggleMenu = document.querySelector('#toggleMenu');
     toggleMenu.classList.toggle('showMenu');
 }
+
+const handlereadMore1 = () => {
+    const dots1 = document.querySelectorAll('.dots1');
+    const moreText1 = document.querySelectorAll('.moreText1');
+    const readMore1 = document.querySelectorAll('.readMore1');
+
+    const isNone = Array.from(dots1).every(dot => dot.style.display === 'none');
+
+    if (isNone) {
+        dots1.forEach(dot => dot.style.display = 'inline');
+        readMore1.forEach(read => read.innerHTML = 'Read more');
+        moreText1.forEach(text => text.classList.toggle('d-none'));
+    } else {
+        dots1.forEach(dot => dot.style.display = 'none');
+        readMore1.forEach(read => read.innerHTML = 'Read less');
+        moreText1.forEach(text => text.classList.toggle('d-none'));
+    }
+}
+
+const handlereadMore2 = () => {
+    const dots2 = document.querySelectorAll('.dots2');
+    const moreText2 = document.querySelectorAll('.moreText2');
+    const readMore2 = document.querySelectorAll('.readMore2');
+
+    const isNone = Array.from(dots2).every(dot => dot.style.display === 'none');
+
+    if (isNone) {
+        dots2.forEach(dot => dot.style.display = 'inline');
+        readMore2.forEach(read => read.innerHTML = 'Read more');
+        moreText2.forEach(text => text.classList.toggle('d-none'));
+    } else {
+        dots2.forEach(dot => dot.style.display = 'none');
+        readMore2.forEach(read => read.innerHTML = 'Read less');
+        moreText2.forEach(text => text.classList.toggle('d-none'));
+    }
+}
+
+const handlereadMore3 = () => {
+    const dots3 = document.querySelectorAll('.dots3');
+    const moreText3 = document.querySelectorAll('.moreText3');
+    const readMore3 = document.querySelectorAll('.readMore3');
+
+    const isNone = Array.from(dots3).every(dot => dot.style.display === 'none');
+
+    if (isNone) {
+        dots3.forEach(dot => dot.style.display = 'inline');
+        readMore3.forEach(read => read.innerHTML = 'Read more');
+        moreText3.forEach(text => text.classList.toggle('d-none'));
+    } else {
+        dots3.forEach(dot => dot.style.display = 'none');
+        readMore3.forEach(read => read.innerHTML = 'Read less');
+        moreText3.forEach(text => text.classList.toggle('d-none'));
+    }
+}
