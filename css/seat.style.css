@@ -23,3 +23,48 @@
 .say--img {
     width: 240px;
 }
+
+.input--login {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.input--login>input {
+    background-color: var(--green-light);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+    padding: 12px 24px;
+}
+
+.login__left {
+    min-height: 100vh;
+}
+
+.input__register {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+.input__register>input,
+.input__register>select {
+    background-color: #EDF2F7;
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+}
+
+.input--grey {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+}
+
+@media (max-width: 767px) {
+    .login__left {
+        min-height: auto;
+    }
+}

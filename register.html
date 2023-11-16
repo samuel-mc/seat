@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SEAT CO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/seat.style.css">
+    <link rel="stylesheet" href="css/generic.css">
+
+</head>
+
+<body>
+    <main class="container-fluid p-5">
+        <div>
+            <h2 class="text--2xl text-dark">Create your account</h2>
+            <span class="text--sm text--orange">It's free!</span>
+        </div>
+        <form>
+            <div class="grid--3cols gap--24">
+                <div class="input__register">
+                    <label for="fullName" class="text--md text-dark">Full name*</label>
+                    <input type="fullName" name="fullName" id="fullName" class="input--primary"
+                        placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="email" class="text--md text-dark">Email*</label>
+                    <input type="email" name="email" id="email" class="input--primary" placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="address" class="text--md text-dark">Address*</label>
+                    <input type="address" name="address" id="adress" class="input--primary" placeholder="Write here...">
+                </div>
+            </div>
+            <div class="grid--3cols gap--24">
+                <div class="input__register">
+                    <label for="country" class="text--md text-dark">Country**</label>
+                    <input type="country" name="country" id="country" class="input--primary"
+                        placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="state" class="text--md text-dark">State*</label>
+                    <input type="state" name="state" id="state" class="input--primary" placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="city" class="text--md text-dark">City*</label>
+                    <input type="city" name="city" id="adress" class="input--primary" placeholder="Write here...">
+                </div>
+            </div>
+            <div class="grid--3cols gap--24">
+                <div class="input__register">
+                    <label for="postalCode" class="text--md text-dark">Postal Code*</label>
+                    <input type="postalCode" name="postalCode" id="postalCode" class="input--primary"
+                        placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="password" class="text--md text-dark">Password*</label>
+                    <input type="password" name="password" id="password" class="input--primary"
+                        placeholder="Write here...">
+                    <span class="text--sm text-secondary-emphasis">It must have at least 8 letters</span>
+                </div>
+                <div class="input__register">
+                    <label for="city" class="text--md text-dark">Confirm your password*</label>
+                    <input type="city" name="city" id="adress" class="input--primary" placeholder="Write here...">
+                    <span class="text--sm text-secondary-emphasis">It must have at least 8 letters</span>
+                </div>
+            </div>
+            <div class="grid--3cols gap--24">
+                <div class="input__register">
+                    <label for="phone" class="text--md text-dark">Phone*</label>
+                    <input type="phone" name="phone" id="phone" class="input--primary" placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="company" class="text--md text-dark">Company*</label>
+                    <input type="company" name="company" id="company" class="input--primary"
+                        placeholder="Write here...">
+                </div>
+                <div class="input__register">
+                    <label for="typeOfBusiness" class="text--md text-dark">Type of Business</label>
+                    <!-- <input type="typeOfBusiness" name="typeOfBusiness" id="adress" class="input--primary"
+                        placeholder="Write here..."> -->
+                    <select name="typeOfBusiness">
+                        <option value="">Select an option</option>
+                        <option value="">Church</option>
+                        <option value="">Convention Center</option>
+                        <option value="">Distributor</option>
+                        <option value="">Hotel</option>
+                        <option value="">Rental</option>
+                        <option value="">Restaurant</option>
+                        <option value="">Venue</option>
+                        <option value="">Wedding Planner</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="my-4">
+                <div class="d-flex">
+                    <input type="checkbox" name="billingAddress" id="billingAddress" class="mr-3">
+                    <label for="billingAddress" class="text--md text-dark"><b>Billing address</b> is the same as <b>shipping address</b></label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="privacy" id="privacy" class="mr-3">
+                    <label for="privacy" class="text--md text-dark">Creating an account means you agree to the <b>Terms and Conditions and our Privacy Policy.</b></label>
+                </div>
+            </div>
+            <div class="w--50">
+                <button class="btn btn--orange btn--rounded w-100 my-4">Create account</button>
+                <p class="text-center text--md text-dark">Do you already have an account?<a href="login.php"
+                        class="text--orange"> Log in here</a></p>
+            </div>
+        </form>
+    </main>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
