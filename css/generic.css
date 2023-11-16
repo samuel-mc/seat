@@ -1,5 +1,7 @@
 :root {
     --orange-color: #F94616;
+    --light-grey: #F4F5F6;
+    --black-color: #363940;
 
     --text--sm: 12px;
     --text--md: 16px;
@@ -34,6 +36,32 @@ body {
 
 .bg--orange {
     background-color: var(--orange-color);
+}
+
+.bg--lightGrey {
+    background-color: var(--light-grey);
+}
+
+.a--black {
+    color: var(--black-color);
+    transition: color 0.6s ease-in-out;
+}
+
+.a--black:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.a--orange {
+    color: var(--orange-color);
+    transition: color 0.6s ease-in-out;
+}
+
+.a--orange:hover {
+    color: var(--black-color);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .text--orange {
@@ -81,6 +109,11 @@ body {
     gap: 12px;
 }
 
+.w--50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
 @media (max-width: 990px) {
     .grid--2cols {
         grid-template-columns: 1fr;
@@ -110,5 +143,9 @@ body {
 
     .grid--6cols {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .w--50 {
+        width: 100%;
     }
 }
