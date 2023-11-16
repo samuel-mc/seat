@@ -1,6 +1,8 @@
 :root {
     --orange-color: #F94616;
-
+    --gray-color: #F7F7F7;
+    --white: #fff;
+    --black: #000;
     --text--sm: 12px;
     --text--md: 16px;
     --text--lg: 20px;
@@ -35,18 +37,46 @@ body {
 .bg--orange {
     background-color: var(--orange-color);
 }
-
+.bg--gray {
+    background-color: var(--gray-color);
+}
 .text--orange {
     color: var(--orange-color);
 }
 
 .btn--rounded {
     border-radius: 50px;
+    border: none !important;
 }
 
 .btn--orange {
+    transition: all 0.3s ease-in-out;
     background-color: var(--orange-color);
     color: #fff;
+}
+.btn--orange:hover{
+    background-color: var(--white);
+    color: var(--orange-color);
+}
+
+.btn--black {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black);
+    color: #fff;
+}
+.btn--orange:hover{
+    background-color: var(--white);
+    color: var(--orange-color);
+}
+
+.btn--white {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+    color: black
+}
+
+.btn--white:hover{
+    background-color: var(--gray-color);
 }
 
 .maxw--520 {
@@ -54,6 +84,7 @@ body {
 }
 
 .gap--24 {
+    display: flex;
     gap: 24px;
 }
 
@@ -80,7 +111,27 @@ body {
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
 }
+.pillNav, .pillNav:focus{
+    border: none;
+    background-color: var(--white);
+    outline: none; /* Esto elimina el contorno predeterminado del foco */
+    box-shadow: none; /* Esto elimina cualquier sombra al enfocar el botón */
+    border-color: transparent; /* Esto hace que el borde sea transparente */
 
+}
+.pillNav.active{
+    color: var(--orange-color) !important;
+}
+.rounded--12{
+    border-radius: 12px;
+}
+.border--gray{
+    border-color: var(--gray-color);
+    box-shadow: none;  
+}
+.gap--12{
+    gap: 12px;;
+}
 @media (max-width: 990px) {
     .grid--2cols {
         grid-template-columns: 1fr;
