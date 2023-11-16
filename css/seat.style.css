@@ -23,3 +23,28 @@
 .say--img {
     width: 240px;
 }
+
+.input--login {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.input--login>input {
+    background-color: var(--green-light);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+    padding: 12px 0;
+    padding: 12px 24px;
+}
+
+.login__left {
+    min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+    .login__left {
+        min-height: auto;
+    }
+}
