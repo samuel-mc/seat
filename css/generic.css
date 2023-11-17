@@ -105,6 +105,10 @@ body {
     background-color: var(--gray-color);
 }
 
+.maxw-160 {
+    max-width: 160px;
+}
+
 .maxw--520 {
     max-width: 520px;
 }

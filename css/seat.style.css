@@ -63,6 +63,13 @@
     padding: 12px;
 }
 
+.input--white {
+    background-color: #FFF;
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+}
+
 @media (max-width: 767px) {
     .login__left {
         min-height: auto;
