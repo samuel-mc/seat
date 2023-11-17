@@ -70,6 +70,26 @@
     padding: 12px;
 }
 
+.btn--faq {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    color: var(--gray-color);
+}
+
+.btn--faq.active {
+    color: var(--orange-color);
+}
+
+.btn--faq:hover {
+    color: var(--orange-color);
+}
+
+.btn--faq:focus {
+    color: none;
+    outline: none;
+}
+
 @media (max-width: 767px) {
     .login__left {
         min-height: auto;
