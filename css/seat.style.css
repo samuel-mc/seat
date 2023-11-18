@@ -49,7 +49,8 @@
 }
 
 .input__register>input,
-.input__register>select {
+.input__register>select,
+.input__register>textarea {
     background-color: #EDF2F7;
     border-radius: 8px;
     border: none;
