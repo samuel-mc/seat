@@ -91,6 +91,15 @@
     outline: none;
 }
 
+.splide__arrow::before {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    color: var(--orange-color); /* Color de las flechas personalizado */
+}
+
+.splide__arrow:hover::before {
+    color: var(--orange-color); /* Color de las flechas personalizado */
+}
+
 @media (max-width: 767px) {
     .login__left {
         min-height: auto;
