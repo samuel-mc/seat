@@ -114,6 +114,11 @@ body {
     max-width: 520px;
 }
 
+.gap--0 {
+    gap: 0;
+}
+
+
 .gap--24 {
     display: flex;
     gap: 24px;

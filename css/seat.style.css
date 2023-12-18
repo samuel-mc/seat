@@ -92,12 +92,15 @@
 }
 
 .splide__arrow::before {
-    font-size: 24px; /* Tamaño de fuente personalizado */
-    color: var(--orange-color); /* Color de las flechas personalizado */
+    font-size: 24px;
+    /* Tamaño de fuente personalizado */
+    color: var(--orange-color);
+    /* Color de las flechas personalizado */
 }
 
 .splide__arrow:hover::before {
-    color: var(--orange-color); /* Color de las flechas personalizado */
+    color: var(--orange-color);
+    /* Color de las flechas personalizado */
 }
 
 .index__hero {
@@ -105,11 +108,37 @@
     background-position: top;
     background-repeat: no-repeat;
     color: white;
-    height: 500px;   
+    height: 500px;
 }
+
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.container__partnerships {
+    background-image: url('/img/landingEco/backGreen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+    padding: 24px;
+}
+
 
 @media (max-width: 767px) {
     .login__left {
         min-height: auto;
+    }
+
+
+    .banner__content {
+        position: relative;
+        top: 0;
+        /* right: 0; */
+        transform: translateY(0);
     }
 }
