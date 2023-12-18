@@ -162,6 +162,12 @@ body {
 .rounded--12{
     border-radius: 12px;
 }
+.rounded-top--12{
+    border-radius: 12px 12px 0 0;
+}
+.rounded-bottom--12{
+    border-radius: 0px 0px 12px 12px;
+}
 .border--gray{
     border-color: var(--gray-color);
     box-shadow: none;  
@@ -196,8 +202,30 @@ body {
     border-bottom: none;
 }
 
+.hr--gap--lg {
+    border-right: 4px solid var(--orange-color); /* Línea a la derecha de cada celda */
+    border-bottom: 4px solid var(--orange-color); /* Línea en la parte inferior de cada celda */
+    padding-right: 20px; /* Espacio adicional para compensar el margen a la derecha */
+
+}
+
+/* Elimina el borde y el espacio derecho del último elemento en cada fila */
+.hr--gap--lg:nth-child(3n) {
+    border-right: none;
+}
+
+/* Elimina el borde y el espacio inferior del último elemento en cada columna */
+.hr--gap--lg:nth-last-child(-n + 3) {
+    border-bottom: none;
+}
+.w--50 {
+    width: 50%;
+}
 @media (max-width: 990px) {
     .hr--gap{
+        border: none;
+    }
+    .hr--gap--lg{
         border: none;
     }
     .grid--2cols {
@@ -215,6 +243,9 @@ body {
     .grid--6cols {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .w--50 {
+        width: 100%;
+      }
 }
 
 @media (max-width: 767px) {

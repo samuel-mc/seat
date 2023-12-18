@@ -100,6 +100,14 @@
     color: var(--orange-color); /* Color de las flechas personalizado */
 }
 
+.index__hero {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;   
+}
+
 @media (max-width: 767px) {
     .login__left {
         min-height: auto;
